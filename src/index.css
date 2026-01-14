@@ -1,4 +1,22 @@
-/* src/index.css - This should contain ONLY these 3 lines */
+/* Tailwind base setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Flip card helpers */
+.perspective {
+  perspective: 1000px;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; 
+}
+
+.transform-3d {
+  transform-style: preserve-3d;
+}
